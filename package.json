@@ -1,0 +1,34 @@
+{
+    "name": "create-pg-norm",
+    "version": "0.0.1",
+    "description": "Create a new PG-NORM project",
+    "main": "main.js",
+    "type": "module",
+    "bin": {
+        "create-pg-norm": "main.js"
+    },
+    "files": [
+        "main.js",
+        "template/"
+    ],
+    "keywords": [
+        "postgres",
+        "pg",
+        "postgres.js",
+        "orm",
+        "noorm",
+        "norm",
+        "pgnorm",
+        "pg-norm",
+        "sql",
+        "database"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+        "pg-norm": "^0.0.4"
+    },
+    "devDependencies": {
+        "@types/node": "^24.9.1"
+    }
+}
