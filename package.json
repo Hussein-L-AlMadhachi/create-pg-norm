@@ -1,6 +1,6 @@
 {
     "name": "create-pg-norm",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Create a new PG-NORM project",
     "main": "main.js",
     "type": "module",
