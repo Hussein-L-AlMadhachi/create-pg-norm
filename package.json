@@ -1,11 +1,11 @@
 {
     "name": "create-pg-norm",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Create a new PG-NORM project",
     "main": "main.js",
     "type": "module",
     "bin": {
-        "create-pg-norm": "main.js"
+        "create-pg-norm": "./main.js"
     },
     "files": [
         "main.js",
