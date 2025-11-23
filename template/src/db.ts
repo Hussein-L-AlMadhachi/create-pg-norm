@@ -1,5 +1,7 @@
 import { PG_App } from 'pg-norm';
-
+import { users } from "./models/users.js"
+import { products } from './models/products.js';
+import { transactions } from "./models/accounts_transactions.js";
 
 
 // Initialize your application
@@ -10,7 +12,9 @@ export const app = new PG_App({
     password: 'pass1234'
 });
 
-
+app.register(users);
+app.register(transactions);
+app.register(products);
 
 /**
  *  full connection options

@@ -1,6 +1,6 @@
 {
     "name": "create-pg-norm",
-    "version": "0.0.4",
+    "version": "0.1.0",
     "description": "Create a new PG-NORM project",
     "main": "main.js",
     "type": "module",
@@ -23,7 +23,7 @@
         "sql",
         "database"
     ],
-    "author": "Your Name",
+    "author": "Hussein Layth AlMadhachi",
     "license": "MIT",
     "devDependencies": {
         "@types/node": "^24.9.1"
