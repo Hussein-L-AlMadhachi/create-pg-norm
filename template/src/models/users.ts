@@ -49,9 +49,6 @@ export class UsersTable extends PG_AuthTable {
 
 
 
-// register table for cli commands support
-
-
 /**
  *   now you can import users and use all the methods that can be used PG_Table are available in PG_AuthTable
  *   with some notes:

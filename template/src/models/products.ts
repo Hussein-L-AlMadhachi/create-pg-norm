@@ -72,8 +72,6 @@ export class ProductsTable extends PG_Table {
 
 
 
-
-
 /**
  *  import products now and use the following methods for basic CRUD
  *  
