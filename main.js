@@ -54,7 +54,7 @@ async function main() {
             "dev": "tsx"
         },
         "dependencies": {
-            "pg-norm": "^0.1.2"
+            "pg-norm": "^0.1.3"
         },
         "devDependencies": {
             "@types/node": "^24.9.1"
