@@ -1,7 +1,8 @@
 import { PG_App } from 'pg-norm';
-import { users } from "./models/users.js"
-import { products } from './models/products.js';
-import { transactions } from "./models/accounts_transactions.js";
+import { UsersTable } from "./models/users.js"
+import { ProductsTable } from './models/products.js';
+import { TransactionLedger } from "./models/accounts_transactions.js";
+
 
 
 // Initialize your application
@@ -12,9 +13,18 @@ export const app = new PG_App({
     password: 'pass1234'
 });
 
+
+
+// register table for cli commands support
+export const users = new UsersTable(app);
+export const products = new ProductsTable(app);
+export const transactions = new TransactionLedger(app);
+
 app.register(users);
 app.register(transactions);
 app.register(products);
+
+
 
 /**
  *  full connection options

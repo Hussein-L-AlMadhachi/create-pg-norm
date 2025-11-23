@@ -9,7 +9,7 @@ import {app} from "../db.js";
 
 
 
-class TransactionLedger extends PG_Ledger {
+export class TransactionLedger extends PG_Ledger {
 
     constructor(pg_app: PG_App) {
 
@@ -36,8 +36,6 @@ class TransactionLedger extends PG_Ledger {
 
 
 
-// register table for cli commands support
-export const transactions = new TransactionLedger(app);
 
 
 

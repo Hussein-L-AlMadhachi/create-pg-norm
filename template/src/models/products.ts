@@ -9,7 +9,7 @@ import {app} from "../db.js";
 
 
 
-class ProductsTable extends PG_Table {
+export class ProductsTable extends PG_Table {
     
 
     constructor(pg_app: PG_App) {
@@ -69,9 +69,6 @@ class ProductsTable extends PG_Table {
         for consistency, compatibilty and better security  */
 }
 
-
-// register table for cli commands support
-export const products = new ProductsTable(app);
 
 
 

@@ -8,7 +8,7 @@ import {app} from "../db.js";
 
 
 
-class UsersTable extends PG_AuthTable {
+export class UsersTable extends PG_AuthTable {
     constructor(pg_app: PG_App) {
 
         //      app  , table_name ,  visible columns     ,  identify user by
@@ -50,7 +50,6 @@ class UsersTable extends PG_AuthTable {
 
 
 // register table for cli commands support
-export const users = new UsersTable(app);
 
 
 /**
