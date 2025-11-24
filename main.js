@@ -45,20 +45,20 @@ async function main() {
         
         // Create package.json for the new project
         const packageJson = {
-        name: projectName,
-        version: "0.0.1",
-        type: "module",
-        scripts: {
-            "db:create": "node ./dist/cli/create.js",
-            "db:alter": "node ./dist/cli/alter.js",
-            "dev": "tsx"
-        },
-        "dependencies": {
-            "pg-norm": "^0.1.3"
-        },
-        "devDependencies": {
-            "@types/node": "^24.9.1"
-        }
+            name: projectName,
+            version: "0.0.1",
+            type: "module",
+            scripts: {
+                "db:create": "node ./dist/cli/create.js",
+                "db:alter": "node ./dist/cli/alter.js",
+                "dev": "tsx"
+            },
+            "dependencies": {
+                "pg-norm": "latest"
+            },
+            "devDependencies": {
+                "@types/node": "latest"
+            }
         };
 
         fs.writeFileSync(
